@@ -32,8 +32,8 @@ Namespace WindowsApplication409
 		Private multiEditorRowProperties2 As MultiEditorRowProperties
 		Private nwindDataSet As nwindDataSet
 		Private customersBindingSource As BindingSource
-		Private customersTableAdapter As WindowsApplication409.nwindDataSetTableAdapters.CustomersTableAdapter
-		Private components As IContainer
+        Private customersTableAdapter As nwindDataSetTableAdapters.CustomersTableAdapter
+        Private components As IContainer
 
 		Public Sub New()
 			'
@@ -69,8 +69,8 @@ Namespace WindowsApplication409
 			Me.multiEditorRowProperties2 = New DevExpress.XtraVerticalGrid.Rows.MultiEditorRowProperties()
 			Me.vGridControl1 = New DevExpress.XtraVerticalGrid.VGridControl()
 			Me.customersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.nwindDataSet = New WindowsApplication409.nwindDataSet()
-			Me.rowAddress = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.rowAddress = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
 			Me.rowCity = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
 			Me.rowCompanyName = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
 			Me.rowContactTitle = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
@@ -82,8 +82,8 @@ Namespace WindowsApplication409
 			Me.rowPostalCode = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
 			Me.rowRegion = New DevExpress.XtraVerticalGrid.Rows.EditorRow()
 			Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-			Me.customersTableAdapter = New WindowsApplication409.nwindDataSetTableAdapters.CustomersTableAdapter()
-			CType(Me.vGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.customersTableAdapter = New nwindDataSetTableAdapters.CustomersTableAdapter()
+            CType(Me.vGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.customersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
